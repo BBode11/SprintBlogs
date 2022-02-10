@@ -1,0 +1,79 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<link href="/css/Index.css" rel="stylesheet" />
+
+<main role="main">
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Sprint Blog</h1>
+            <p class="lead text-white">The following blog is to track my progress during the System Development Life Cycle and to reflect on each sprint.</p>
+            <p>
+                <a asp-area="" asp-page="/Sprint1" class="btn btn-primary my-2">Get Started</a>
+                <a href="https://docs.google.com/document/d/1IulLVZy7DVuNQ6TaZBjKeynxBxBQQbe9kOO1CDWvzXw/edit?usp=sharing" class="btn btn-secondary my-2">Project Notebook</a>
+            </p>
+        </div>
+    </section>
+
+    <div class="blog-posts py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 h-100 shadow-sm">
+                        <img class="card-img card-img-top" width="100" height="225" src="~/Media/sprint-1.jpg" alt="Starting line showing lane 1" />
+                        <div class="card-body">
+                            <h5>Sprint 1 Blog</h5>
+                            <p class="card-text">
+                                The team started the Planning Stage of the System Development Life Cycle.
+                                User Stories or Use Cases were defined while working with the Product Owner to more clearly define the product including the general requirements and
+                                feature set.
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-area="" asp-page="/Sprint1" class="btn btn-outline-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 h-100 shadow-sm">
+                        <img class="card-img card-img-top" width="100" height="225" src="~/Media/sprint2.jpg" alt="Starting line showing lane 1" />
+                        <div class="card-body">
+                            <h5>Sprint 2 Blog</h5>
+                            <p class="card-text">
+                                Analyzed the client product from a system’s requirement bases and
+                                determined the technologies that will be employed to develop and implement the client
+                                product.
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-area="" asp-page="/Sprint2" class="btn btn-outline-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 h-100 shadow-sm">
+                        <img class="card-img card-img-top" width="100" height="225" src="~/Media/sprint3.jpg" alt="Starting line showing lane 1" />
+                        <div class="card-body">
+                            <h5>Sprint 3 Blog</h5>
+                            <p class="card-text">
+                                The team will design and begin developing the client product. Testing will be ongoing during
+                                this sprint.
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a asp-area="" asp-page="/Sprint3" class="btn btn-outline-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</main>
